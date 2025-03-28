@@ -50,7 +50,11 @@ namespace PhoneBook.UI
                     key.SetValue("HardDiskSerialNumber", hardDiskSerialNumber);
                     key.SetValue("MacAddress", macAddress);
 
-                    MessageBox.Show("Licence key accepted.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);   
+                    MessageBox.Show("Licence key accepted.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    this.Hide();
+                    form_Login frLog = new form_Login();
+                    frLog.Show();
                 }
 
 
